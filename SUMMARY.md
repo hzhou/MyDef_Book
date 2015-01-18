@@ -8,7 +8,7 @@
        * [HTML](gallery_html.md)
        * [JavaScript](galary_javascript.md)
        * [PHP](galary_php.md)
-       * More C
+       * [More C](galary_more_c.md)
 * [Installing MyDef](Installing.md)
 * [Structure of MyDef](mydef_structure.md)
    * [Subcode](general_subcode.md)
