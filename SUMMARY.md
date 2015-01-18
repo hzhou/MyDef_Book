@@ -12,5 +12,5 @@
    * [Macros](general_macros.md)
 * [Specific Output Modules](modules.md)
    * [Perl](module_perl.md)
-   * C
+   * [C](module_c.md)
 
