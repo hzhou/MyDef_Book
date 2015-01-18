@@ -14,4 +14,5 @@
    * [Perl](module_perl.md)
    * [C](module_c.md)
    * [C++](module_c++.md)
+   * Perl XS
 
