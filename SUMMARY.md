@@ -11,6 +11,6 @@
    * Subcode
    * Macros
 * [Specific Output Modules](modules.md)
+   * C
    * Perl
-       * C
 
