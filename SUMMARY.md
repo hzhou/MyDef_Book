@@ -5,5 +5,6 @@
    * [A quick tour](a_quick_tour.md)
    * [Gallery](gallery.md)
        * [Perl](gallery_perl.md)
+       * HTML
 * [Installing MyDef](Installing.md)
 
