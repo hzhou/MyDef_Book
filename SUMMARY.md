@@ -7,4 +7,5 @@
        * [Perl](gallery_perl.md)
        * [HTML](gallery_html.md)
 * [Installing MyDef](Installing.md)
+* [Structure of MyDef](mydef_structure.md)
 
