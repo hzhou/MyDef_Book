@@ -7,7 +7,7 @@
        * [Perl](gallery_perl.md)
        * [HTML](gallery_html.md)
 * [Installing MyDef](Installing.md)
-* [Structure of MyDef](mydef_structure.md)
+* [General Structures](mydef_structure.md)
    * Subcode
    * Macros
 
