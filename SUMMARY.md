@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-   * [Who would benefit from MyDef?](who_would_benefit_from_mydef.md)
+   * [Who would benefit](who_would_benefit_from_mydef.md)
    * [A quick glimpse](a_quick_tour.md)
    * [Gallery](gallery.md)
        * [Perl](gallery_perl.md)
