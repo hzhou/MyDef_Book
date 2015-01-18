@@ -19,5 +19,5 @@
    * [HTML](module_html.md)
    * [JavaScript](module_javascript.md)
    * [Arduino](module_arduino.md)
-   * Matlab
+   * [Matlab](module_matlab.md)
 
