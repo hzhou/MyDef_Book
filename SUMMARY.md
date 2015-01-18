@@ -18,5 +18,5 @@
    * [Win32](module_win32.md)
    * [HTML](module_html.md)
    * [JavaScript](module_javascript.md)
-   * Arduino
+   * [Arduino](module_arduino.md)
 
