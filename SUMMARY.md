@@ -17,5 +17,5 @@
    * [Perl XS](module_xs.md)
    * [Win32](module_win32.md)
    * [HTML](module_html.md)
-   * JavaScript
+   * [JavaScript](module_javascript.md)
 
