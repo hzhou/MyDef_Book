@@ -12,4 +12,5 @@
    * Macros
 * [Specific Output Modules](modules.md)
    * Perl
+   * C
 
