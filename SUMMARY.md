@@ -15,4 +15,5 @@
    * [C](module_c.md)
    * [C++](module_c++.md)
    * [Perl XS](module_xs.md)
+   * Win32
 
