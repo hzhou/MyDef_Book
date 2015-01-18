@@ -16,4 +16,5 @@
    * C++
    * Perl XS
    * Win32
+   * HTML
 
