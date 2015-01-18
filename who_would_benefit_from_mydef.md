@@ -1,4 +1,4 @@
-# Who would benefit from MyDef?
+# Who would benefit?
 
 MyDef will benefit programmers who are already experienced with at least one programming language.
 
