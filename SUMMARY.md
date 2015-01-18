@@ -8,16 +8,4 @@
        * [HTML](gallery_html.md)
 * [Installing MyDef](Installing.md)
 * [Structure of MyDef](mydef_structure.md)
-   * Subcode
-   * Macros
 * [Specific Output Modules](modules.md)
-   * Perl
-   * C
-   * C++
-   * Perl XS
-   * Win32
-   * HTML
-   * JavaScript
-   * Matlab
-   * Arduino
-
