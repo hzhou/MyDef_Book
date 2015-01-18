@@ -4,6 +4,6 @@
    * [Who would benefit from MyDef?](who_would_benefit_from_mydef.md)
    * [A quick tour](a_quick_tour.md)
    * [Gallery](gallery.md)
-       * Perl
+       * [Perl](gallery_perl.md)
 * [Installing MyDef](Installing.md)
 
