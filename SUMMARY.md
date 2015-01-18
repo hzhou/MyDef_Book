@@ -13,4 +13,5 @@
 * [Specific Output Modules](modules.md)
    * Perl
    * C
+   * C++
 
