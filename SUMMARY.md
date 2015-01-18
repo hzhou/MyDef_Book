@@ -15,4 +15,5 @@
    * C
    * C++
    * Perl XS
+   * Win32
 
