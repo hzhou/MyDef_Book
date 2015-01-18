@@ -14,4 +14,5 @@
    * Perl
    * C
    * C++
+   * Perl XS
 
