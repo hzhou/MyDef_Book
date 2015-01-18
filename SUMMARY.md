@@ -9,6 +9,6 @@
 * [Installing MyDef](Installing.md)
 * [Structure of MyDef](mydef_structure.md)
    * [Subcode](general_subcode.md)
-   * Macros
+   * [Macros](macros.md)
 * [Specific Output Modules](modules.md)
 
