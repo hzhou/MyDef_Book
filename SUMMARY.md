@@ -7,6 +7,7 @@
        * [Perl](gallery_perl.md)
        * [HTML](gallery_html.md)
        * [JavaScript](galary_javascript.md)
+       * PHP
 * [Installing MyDef](Installing.md)
 * [Structure of MyDef](mydef_structure.md)
    * [Subcode](general_subcode.md)
