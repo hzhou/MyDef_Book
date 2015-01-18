@@ -16,4 +16,5 @@
    * [C++](module_c++.md)
    * [Perl XS](module_xs.md)
    * [Win32](module_win32.md)
+   * HTML
 
