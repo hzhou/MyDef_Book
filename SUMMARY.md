@@ -9,6 +9,7 @@
        * [JavaScript](galary_javascript.md)
        * [PHP](galary_php.md)
        * [More C](galary_more_c.md)
+       * Win32
 * [Installing MyDef](Installing.md)
 * [Structure of MyDef](mydef_structure.md)
    * [General Module](general_module.md)
