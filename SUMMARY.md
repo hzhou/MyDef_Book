@@ -9,13 +9,14 @@
        * [JavaScript](galary_javascript.md)
        * [PHP](galary_php.md)
        * [More C](galary_more_c.md)
-       * Win32
+       * [Win32](galary_win32.md)
 * [Installing MyDef](Installing.md)
 * [Structure of MyDef](mydef_structure.md)
    * [General Module](general_module.md)
+   * [Page and Make](general_page.md)
    * [Subcode](general_subcode.md)
-   * [Macros](general_macros.md)
-   * Sub Def Files
+   * [Macro](general_macros.md)
+   * [Preprocessor](general_preproc.md)
 * [Specific Output Modules](modules.md)
    * [Perl](module_perl.md)
    * [C](module_c.md)
