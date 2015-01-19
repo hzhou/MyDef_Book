@@ -82,6 +82,6 @@ The JavaScript output:
 ```
 And in browser:
 
-![counterpage](Capture.PNG)
+![counterpage](js_countup.png)
 
 
