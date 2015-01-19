@@ -1,4 +1,4 @@
-# Multiple pages in a single def file
+# Multiple pages
 
 We already know the basic unit in a def file is page:
 
