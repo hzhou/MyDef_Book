@@ -13,8 +13,8 @@
 * [Structure of MyDef](mydef_structure.md)
    * [General Module](general_module.md)
    * [Subcode](general_subcode.md)
-   * Sub Def Files
    * [Macros](general_macros.md)
+   * Sub Def Files
 * [Specific Output Modules](modules.md)
    * [Perl](module_perl.md)
    * [C](module_c.md)
