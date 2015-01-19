@@ -11,7 +11,7 @@
        * [More C](galary_more_c.md)
 * [Installing MyDef](Installing.md)
 * [Structure of MyDef](mydef_structure.md)
-   * [General Module](general_module.md)
+   * General Module
    * [Subcode](general_subcode.md)
    * [Macros](general_macros.md)
 * [Specific Output Modules](modules.md)
