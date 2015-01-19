@@ -13,8 +13,8 @@
 * [Installing MyDef](Installing.md)
 * [Structure of MyDef](mydef_structure.md)
    * [General Module](general_module.md)
-   * Page attributes
-   * [Multiple pages in a single def file](multiple_pages_in_a_single_def_file.md)
+   * [Page attributes](page_attributes.md)
+   * [Multiple pages](multiple_pages_in_a_single_def_file.md)
    * [Page and Project](general_page.md)
    * [Calling Subcode](general_subcode.md)
    * [Macro](general_macros.md)
