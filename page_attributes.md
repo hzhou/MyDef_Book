@@ -71,5 +71,5 @@ page: t
     All attributes start with "word: ", so MyDef will recognize where the real content starts.
 ```    
 
-Some of these attributes may have specific meaning in specific output module. For example, the C module recognizes "use_double: 1" to change the default floating type to "double" instead of "float". All the page attributes, including type and output_dir is available as macros.    
+Some of these attributes may have specific meaning in specific output module. For example, the C module recognizes "use_double: 1", and will change the default floating type to "double" instead of "float". However, usually we specify page attributes simply to be used as macros.    
     
