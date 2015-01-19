@@ -1,4 +1,5 @@
 Introduction
 =======
 
-Here I will persuade you why MyDef is the greatest way to programming.
+MyDef is macro system to write programs. Unlike conventional macro system that only focuses on word level, MyDef emphasizes semantic structure from top to down.
+
