@@ -73,7 +73,7 @@ page: t
 ```
 MyDef will remind you it is recursive:
 ```
-$ mydef_page.pl -mgeneral t.def
+$ mydef_page -mgeneral t.def
 PAGE: t
 Recursive subcode: A [1]
 ```

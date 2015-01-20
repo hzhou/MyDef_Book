@@ -38,7 +38,7 @@ Or a C program:
 
 To compile and run:
 
-    $ mydef_page.pl -mgeneral helloworld.def
+    $ mydef_page -mgeneral helloworld.def
     PAGE: helloworld
       --> [./helloworld.c]
     $ gcc helloworld.c

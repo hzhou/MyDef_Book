@@ -9,7 +9,7 @@ page: t
     Some text
 ```
 ```
-mydef_page.pl -mgeneral t.def
+mydef_page -mgeneral t.def
 PAGE: t
   --> [./t.txt]
 ```
@@ -30,7 +30,7 @@ What if we want a different extension or without extension? This can be accompli
         This file t2 (without extension).
 
 ```
-mydef_page.pl -mgeneral t.def
+mydef_page -mgeneral t.def
 PAGE: t
   --> [./t.txt]
 PAGE: t1
@@ -53,7 +53,7 @@ page: t
 ```
 
 ```
-$ mydef_page.pl -mgeneral t.def
+$ mydef_page -mgeneral t.def
 PAGE: t
   --> [./out/t.txt]
 ```
@@ -68,7 +68,7 @@ page: t
     This file will be compiled using the general module.
 ```
 ```
-$ mydef_page.pl t.def
+$ mydef_page t.def
 PAGE: t
   --> [./t.txt]
 ```

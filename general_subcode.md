@@ -13,16 +13,16 @@ page: t
 
     subcode: A
         Line A1
-	Line A2
+        Line A2
 
     subcode: B
         Line B1
-	Line B2
+        Line B2
 ```
 What do you think the compiled output will be? Let's see:
 
 ```
-$ mydef_page.pl -mgeneral t.def
+$ mydef_page -mgeneral t.def
 PAGE: t
   --> [./t.txt]
 $ cat t.txt
@@ -46,11 +46,11 @@ page: t
 
     subcode: A
         Line A1
-	Line A2
+        Line A2
 
     subcode: B
         Line B1
-	Line B2
+        Line B2
 ```
 
 This time, the compiled output will be:
@@ -118,15 +118,15 @@ subcode: basic_frame
 
 page: page_1
     subcode: main
-	$call basic_frame
+        $call basic_frame
     subcode: content
-	<h1>Page 1</h1>
+        <h1>Page 1</h1>
 
 page: page_2
     subcode: main
-	$call basic_frame
+        $call basic_frame
     subcode: content
-	<h1>Page 2</h1>
+        <h1>Page 2</h1>
 ```
 
 This kind of usage turns out to be very common. Think about a website having pages with same headers and footing, or API(application programming interface) routines that require same initializations and finalizations, or some applications such as open gl or mobile apps. Essentially, we are creating our own API. The bad side of this practice is it obscures the higher level structure. It may not immediately clear where subcode: content is being called.  The problem of obscurity is common among all API applications. But unlike the typical API's function interface, the subcode call is vanilla simple and straight forward, and it is never in binary form. So a straight grep should reveal the source of frame subcode for one to study or even freely modify. 

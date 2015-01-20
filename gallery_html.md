@@ -25,7 +25,7 @@ page: example, basic_frame
 
 Let's compile it:
 ```
-$ mydef_page.pl -mwww example.def
+$ mydef_page -mwww example.def
 PAGE: example
   --> [./t.html]
 ```

@@ -15,7 +15,7 @@ In fact, a single def file can contain multiple page:
         
 Upon compile, multiple output source file will be generated:
 
-    $ mydef_page.pl example.def
+    $ mydef_page example.def
     PAGE: file1
       --> [file1.xxx]
     PAGE: file2

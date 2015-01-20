@@ -38,7 +38,7 @@ To test, create a test.def:
         
 Compile and run:
 
-    $ mydef_page.pl -mperl test.def && perl test.pl
+    $ mydef_page -mperl test.def && perl test.pl
     
 If you get:
 

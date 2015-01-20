@@ -30,7 +30,7 @@ page: js_example, js_frame
 
 Compile:
 ```
-$ mydef_page.pl -mwww js_example.def
+$ mydef_page -mwww js_example.def
 PAGE: js_example
   --> [./js_example.html]
 ```

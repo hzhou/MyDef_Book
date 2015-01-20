@@ -28,7 +28,7 @@ Now, let's put this simple program in MyDef:
 
 To compile:
 
-    $ mydef_page.pl -mc helloworld.def
+    $ mydef_page -mc helloworld.def
     PAGE: helloworld
       ---> ./Makefile
       --> [./helloworld.c]
