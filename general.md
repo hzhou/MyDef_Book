@@ -1,4 +1,4 @@
-# Structure of MyDef
+# General Structure of MyDef
 
 To MyDef, all output files are simply text files with underlying structures -- from lower level syntactical structures to higher level semantic structures. Unfortunately, the low level structures do not always align with high level structures. When we encounter conflicts, we are forced to maintain the low level structures that are demanded by the language syntax, or it will not run. However, our comprehension works at semantic level from top to down. We wish to write in a way that preserves the higher level structures but somehow still can feed into the lower level language engine. MyDef is created for such purpose.
 

@@ -7,9 +7,9 @@ Inside a page unit, one can multiple subcodes. Each subcode is a block of text l
 page: t
     subcode: main
         Start of the text.
-	Line 2
-	    Line 2.1
-	    Line 2.2
+        Line 2
+            Line 2.1
+            Line 2.2
 
     subcode: A
         Line A1
@@ -38,11 +38,11 @@ Did it suprise you? MyDef looks for "subcode: main" to start compile, and it com
 page: t
     subcode: main
         Start of the text.
-	Line 2
-	    Line 2.1
-	    Line 2.2
-	    $call B
-	$call A
+        Line 2
+            Line 2.1
+            Line 2.2
+            $call B
+        $call A
 
     subcode: A
         Line A1
