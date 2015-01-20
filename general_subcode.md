@@ -1,5 +1,5 @@
-Subcodes and Macros
-===================
+Subcode
+=======
 
 Inside a page unit, one can multiple subcodes. Each subcode is a block of text lines that MyDef will translate into output codes. 
 
@@ -141,4 +141,4 @@ page: page_1, basic_frame
 
 This is equivallent to above but with less typing.
 
-Modern IDE editors will often have templates or ability to automatically generate frame code upon file creation. However, it only solves the complexity problem at first creation time. During on-going development, we still need routinely figure out where to insert or edit our code, and during code revision or refactoring, we still need figure out where our relavant code lies among the clutter of frame code. MyDef let us refactor top level structure consistently from creation to on-going maintaininence, which we believe provides a better solution.
+Modern IDE editors will often have templates or ability to automatically generate frame code upon file creation. However, it only solves the complexity problem at creation time. During on-going development, we still need routinely figure out where to insert or edit our code; and during code revision or refactoring, we still need figure out where our relavant code lies among the clutter of frame code. MyDef let us refactor top level structure consistently from creation throughout on-going maintaininence, which we believe provides a better solution.

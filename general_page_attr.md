@@ -60,7 +60,20 @@ PAGE: t
 
 But sometime, we may want to output directly to an existing source tree. For example, when we developing web sites, we may want to directly output to the configured site folder.
 
-In addition to file type and output directory, we also can specify arbitrary amount of additional attributes. For example:
+We also can specify the output module using page attributes.
+```
+page: t
+    module: general
+
+    This file will be compiled using the general module.
+```
+```
+$ mydef_page.pl t.def
+PAGE: t
+  --> [./t.txt]
+```
+
+Beside type, output_dir, and module, we also can specify arbitrary amount of additional attributes. For example:
 
 ```
 page: t
@@ -71,5 +84,5 @@ page: t
     All attributes start with "word: ", so MyDef will recognize where the real content starts.
 ```    
 
-Some of these attributes may have specific meaning in specific output module. For example, the C module recognizes "use_double: 1", and will change the default floating type to "double" instead of "float". However, usually we specify page attributes simply to be used as macros.    
+Some of these attributes may have specific meaning in specific output module. For example, the C module recognizes "use_double: 1", and will change the default floating type to "double" instead of "float". However, most of the time we specify page attributes simply to be used as macros.    
     
