@@ -38,9 +38,9 @@ page: t
     This does not start a comment /* not a comment
     */
       /* but this does start a
-         multiline comments. 
-	 And this */ does not end the comments.
-	 This does. */
+         multiline comment. 
+         And this */ does not end the comment.
+         This does. */
 ```
 The above page compiles to:
 ```
@@ -85,8 +85,8 @@ Similar to "NEWLINE", a line starts with "NOOP" also has special meaning in MyDe
 page: t
     module: perl
     $if $#ARGV>0
-	NOOP
+        NOOP
     $else
-	die "Argument required!\n"
+        die "Argument required!\n"
 ```
 
