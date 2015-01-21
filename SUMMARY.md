@@ -24,7 +24,7 @@
        * [Cumulative subcode](general_subcode_cumulative.md)
        * [Autoload](general_subcode_autoload.md)
    * [Preprocessing](general_preproc.md)
-   * [Scopes](general_macros_scope.md)
+   * [Scopes](general_scope.md)
    * [More about macros](general_macros_more.md)
 * [Module Specific Features](modules.md)
    * [Perl](module_perl.md)
