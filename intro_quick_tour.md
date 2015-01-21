@@ -1,4 +1,4 @@
-# A quick glimpse
+# A quick tour
 
 Let's start with the "hello world" program in C:
 

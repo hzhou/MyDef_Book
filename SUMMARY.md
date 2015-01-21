@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Overview](overview.md)
-   * [Who Would Benefit](intro_who_benefit.md)
+   * [What to expect](intro_who_benefit.md)
    * [Quick Tour](intro_quick_tour.md)
    * [Gallery](intro_gallery.md)
        * [Perl](gallery_perl.md)

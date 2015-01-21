@@ -1,7 +1,13 @@
-# Who would benefit?
+# What to expect
 
-MyDef will benefit programmers who are already experienced with at least one programming language.
+MyDef is not a programming language. 
 
-MyDef is not intended for novices who are learning how to program. MyDef on its own is not a complete programming language. It is a meta system to facilitate writing and refactoring programs written in a primary language such as C, Perl, PHP, etc. As such, MyDef will not benefit novice programmers who are still struggling with basic programming concept. When they are still confused with basic language syntax, giving them the ability to morph and write their own syntax will not help. On the other hand, for experienced programmers, there is often a need beyond getting the code to compile and run. When the programmer is already familiar with the language, the focus shifts to semantics such as algorithms and program structures. At this stage, the low level syntax of the primal language, such as the semicolons, brackets, and even the necessary interface to define and call subroutines can become nuisance in the way of achieving master programmer's vision. If this sounds like a familiar scenario, then MyDef is for you!
+A programming language is a rather low level construct, mainly catering toward machines. As such, its unit of structures are rather inflexible. 
+
+On the other hand, our mind works on a semantic level, whose structures are quite fluid. We can think about a wheel, and we can think about a material, both quite independently. To our mind, we seperate them when we study them seperately, but we can also mix them when we need put them together. This kind of behavior is hard to define in a rigid programing language. 
+
+MyDef is a meta layer that tries to cater toward how our mind works. MyDef does not intrisically respect the syntax of underlying programming language. Its fundamental model simply treat the source code as plain text. Therefore, MyDef can better focus on realizing our semantic structrures.
+
+But don't get it wrong, it is not one or the other. Our mind can easily shift focus back and forth between higher level semantic structure and lower level language constructs. In MyDef, the underlying language is still there, not much interfered, our mind have no problem to focus on the language syntax if we choose to. And when we are experienced and confident with the language syntax stuff, we can and would prefer to work at higher semantic level. MyDef shall help you on that.
 
 
