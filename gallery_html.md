@@ -1,5 +1,5 @@
 # HTML
-HTML is not exactly a programming language, and it is easy to grasp. But aren't we all hate the cumbersomeness of those tags! Naturally, I would like edit my HTML page something like following: 
+HTML is not exactly a programming language, and it is easy to grasp. But don't we all hate the cumbersomeness of those tags! Naturally, I would like to edit my HTML page something as: 
 ```
 page: example, basic_frame
     title: HTML Example Page

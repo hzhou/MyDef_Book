@@ -7,7 +7,7 @@
    * [Gallery](intro_gallery.md)
        * [Perl](gallery_perl.md)
        * [HTML](gallery_html.md)
-       * [JavaScript](galary_javascript.md)
+       * [JavaScript](gallery_javascript.md)
 * [Installing MyDef](Installing.md)
 * [Basic Features](Basic.md)
    * [Semantic structure](semantic.md)
