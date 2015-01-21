@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [Overview](overview.md)
    * [Who Would Benefit](intro_who_benefit.md)
    * [Quick Tour](intro_quick_tour.md)
    * [Gallery](intro_gallery.md)
@@ -21,8 +22,11 @@
        * [Map call](general_subcode_map.md)
        * [Block call](general_subcode_block.md)
        * [Cumulative subcode](general_subcode_cumulative.md)
+       * [Autoload](general_subcode_autoload.md)
    * [Preprocessing](general_preproc.md)
-* [Specific Output Modules](modules.md)
+   * [Scopes](general_macros_scope.md)
+   * [More about macros](general_macros_more.md)
+* [Module Specific Features](modules.md)
    * [Perl](module_perl.md)
    * [C](module_c.md)
    * [C++](module_c++.md)

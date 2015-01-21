@@ -61,7 +61,7 @@ subcode:: exit
 
 ...
 ```
-All the subcode blocks will be concatenated together upon compilation.
+You have noticed the difference of "subcode::" vs previous "subcode:", don't you? All the subcode blocks will be concatenated in this case.
 
 At this point, it beneficial to understand the order of MyDef processing. MyDef will process your main def file first, from first line to last line, then it will process all the included def file in sequence. If the included def file includes additional def files, they are appended to the list. Lastly, MyDef will process any standard library -- those automatically included by the output modules. 
 
@@ -133,7 +133,7 @@ Can you guess the output?  The output will be:
 </p>
 ```
 
-I should mention here that in addition to "subcode:" and "subcode::", there are also "subcode:-" and "subcode:@". They only differ in actions when MyDef find previouly existing subcode definitions. "subcode:" will simply replace, "subcode::" will append, "subcode:-" will prepend, and "subcode:@" will only be used as the default (that is, it will be ignored unless nowhere else defines it). In practice, only "subcode:" and "subcode::" are commonly used.
+For completeness, I should mention here that in addition to "subcode:" and "subcode::", there are also "subcode:-" and "subcode:@". They only differ in actions when MyDef find previouly existing subcode definitions. "subcode:" will simply replace, "subcode::" will append, "subcode:-" will prepend, and "subcode:@" will only be used as the default (that is, it will be ignored unless nowhere else defines it). In practice, only "subcode:" and "subcode::" are commonly used.
     
 You may also be wondering in the std_www.def, what does the '@` in "$call @process" mean? If we have this:
 ```
