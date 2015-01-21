@@ -8,6 +8,6 @@ On the other hand, our mind works on a semantic level, whose structures are quit
 
 MyDef is a meta layer that tries to cater toward how our mind works. MyDef does not intrisically respect the syntax of underlying programming language. Its fundamental model simply treat the source code as plain text. Therefore, MyDef can better focus on realizing our semantic structrures.
 
-But don't get it wrong, it is not one or the other. Our mind can easily shift focus back and forth between higher level semantic structure and lower level language constructs. In MyDef, the underlying language is still there, not much interfered, our mind have no problem to focus on the language syntax if we choose to. And when we are experienced and confident with the language syntax stuff, we can and would prefer to work at higher semantic level. MyDef shall help you on that.
+But don't get it wrong, it is not one or the other. Our mind can easily shift focus back and forth between higher level semantic structure and lower level language constructs. We can program directly in assembly language as well as Basic, and Java. One is easier than the other depend on the degree that our mind need to bend. However, none of the programming language can reach a level what I would call "What you see is what you think" (WYSIWYT). MyDef aims at WYSIWYT.
 
 
