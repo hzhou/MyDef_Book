@@ -23,7 +23,7 @@
    * [Map call](general_subcode_map.md)
    * [Block call](general_subcode_block.md)
    * [Cumulative subcode](general_subcode_cumulative.md)
-   * [Autoload](general_subcode_autoload.md)
+   * [Autoload](advanced_autoload.md)
    * [Preprocessing](general_preproc.md)
    * [Scopes](general_scope.md)
    * [More about macros](general_macros_more.md)
