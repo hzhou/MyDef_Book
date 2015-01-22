@@ -25,7 +25,7 @@ For windows user, I am going to recommend notepad++ if you don't already have a 
 
 ![Notepad ++](npp.png)
   
-In notepad++, in addition to auto indentation, you can mass indent a block by selecting the block and press <TAB>. Or you can mass de-indent a block by pressing <Shift+TAB>. You will do this very offten in MyDef.
+In notepad++, in addition to auto indentation, you can mass indent a block by selecting the block and press "TAB". Or you can mass de-indent a block by pressing "Shift+TAB". You will do this very offten in MyDef.
 
 It is really easy to create basic syntax highlighting in Notepad++. Goto menu "Language", then "Define your language...", Set Ext. to "def", head to the "Keywords Lists" tab, insert groups of keywords as shown in the screenshot below: 
 
