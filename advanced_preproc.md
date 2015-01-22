@@ -10,11 +10,11 @@ These are straight forward $(if)...$(elif)...$(else) switches.
 ```
 subcode: A(name)
     $(if:name=Hui)
-	$call very_specific_behavior
+        $call very_specific_behavior
     $(elif:name=None)
-	# do nothing
+        # do nothing
     $(else)
-	$call general_behavior
+        $call general_behavior
 ```
 
 These conditional switches tests the following condtions:
