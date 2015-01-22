@@ -20,56 +20,72 @@ subcode: A(name)
 These conditional switches tests the following condtions:
 
 * $(if:0)
-    - Always false. The block is switched off. It can be used as effective block comment.
+  
+  Always false. The block is switched off. It can be used as effective block comment.
 
 * $(if:1)
-    - Always true. The block is switched on.
+  
+  Always true. The block is switched on.
 
 * $(if:number:name)
-    - True if macro $(name) is defined and starts with digits
+  
+  True if macro $(name) is defined and starts with digits
 
 * $(if:string:name)
-    - True if macro $(name) is defined and enclosed in quotes, either "..." or '...'
+  
+  True if macro $(name) is defined and enclosed in quotes, either "..." or '...'
 
 * $(if:hascode:name)
-    - True if "subcode: name" is defined
+  
+  True if "subcode: name" is defined
 
 In the followin rules, name can be replaced with name:number (e.g. name:4), which means take the first number characters of the macro $(name).
 
 * $(if:name)
-    - True if macro $(name) is defined and not empty and not 0, false otherwise
+  
+  True if macro $(name) is defined and not empty and not 0, false otherwise
 
 * $(if:name in item1,item2,...,itemN)
-    - True if macro $(name) is equal to one of the itemlist. 
+  
+  True if macro $(name) is equal to one of the itemlist. 
 
 * $(if:name in range)
-    - range is of the form a-z, where a and z is any alphanumeric character. It is true when the first letter of macro $(name) is in the range.
+  
+  range is of the form a-z, where a and z is any alphanumeric character. It is true when the first letter of macro $(name) is in the range.
 
 * $(if:name=string)
-    - True if macro $(name) is equal to "string" 
+  
+  True if macro $(name) is equal to "string" 
 
 * $(if:name!=string)
-    - True if macro $(name) is not equal to "string" 
+  
+  True if macro $(name) is not equal to "string" 
 
 * $(if:name>value)
-    - True if macro $(name) is greater than value numerically
+  
+  True if macro $(name) is greater than value numerically
 
 * $(if:name<value)
-    - True if macro $(name) is less than value numerically
+  
+  True if macro $(name) is less than value numerically
 
 * $(if:name~string)
-    - True if macro $(name) starts with "string"
+  
+  True if macro $(name) starts with "string"
 
 In the following rules, cond refers to any of above conditions (following if:)
 
 * $(if:!cond)
-    - Negate. True become false, and false become true.
+  
+  Negate. True become false, and false become true.
 
 * $(if:cond1 or cond2 or ...)
-    - Or. True if any of the conditions are true.
+  
+  Or. True if any of the conditions are true.
 
 * $(if:cond1,cond2,...)
-    - And. True if all the conditions are true.
+  
+  And. True if all the conditions are true.
 
 The above three operations can be combined. And has the highest precedence, followed by Or and Negate. No parentheses are allowed.
 
