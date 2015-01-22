@@ -22,7 +22,7 @@ page: js_example, js_frame
         $call 2d_init, canvas
         &call listen, symmetry_input, keyup
             $if event.which == 13
-                $call math_set_alpha, parseFloat(symmetry_input.value)
+                $call set_symmetry, parseFloat(symmetry_input.value)
                 $call draw_reset
 
         &call animate
@@ -43,8 +43,14 @@ subcode: 2d_init(canvas)
     ox=canvas.width/2
     oy=$(size)/2
     radius=$(size)/2*0.8
-    $call math_set_alpha, 0
+    $call set_symmetry, 0
     $call math_step, 0
+
+subcode: set_symmetry(symmetry)
+    $global symmetry=5
+    symmetry=$(symmetry)
+    $if isNaN(symmetry) || symmetry<2 || symmetry>100
+	symmetry=5
 
 subcode: draw_reset
     surface.clearRect(0,0, canvas.width, canvas.height)
@@ -71,23 +77,18 @@ subcode: draw_step(delta_time_in_second)
 	surface.lineTo(x1+(x2-x1)*cf, y1+(y2-y1)*cf)
     surface.stroke();
 
+#---------------------------------------- 
 macros:
     C: Math.cos($1)
     S: Math.sin($1)
     Pythogrean: Math.sqrt(($1)*($1)+($2)*($2))
     Pi: Math.PI
 
-subcode: math_set_alpha(symmetry)
-    $global alpha, symmetry=5
-    symmetry=$(symmetry)
-    $if isNaN(symmetry) || symmetry<2 || symmetry>100
-	symmetry=5
-    alpha=$(Pi)/symmetry
-
 subcode: math_step(mode)
-    $global beta1, beta2, x1, y1, x2, y2
+    $global alpha, beta1, beta2, x1, y1, x2, y2
     $global cf, df
     $(if:mode=0)
+	alpha=$(Pi)/symmetry
         beta1=-$(Pi)/2
         cf=0
         x0=ox+radius*$(C:beta1)
@@ -102,13 +103,6 @@ subcode: math_step(mode)
     y2=oy+radius*$(S:beta2)
     df=1.0/$(Pythogrean:x2-x1, y2-y1)
     cf=0.0
-
-#---------------------------------------- 
-subcode: test_draw
-    surface.beginPath()
-    surface.moveTo(0, 0)
-    surface.lineTo(ox, oy)
-    surface.stroke()
 
 ```
 
@@ -137,8 +131,8 @@ The JavaScript output:
             var ox;
             var oy;
             var radius;
-            var alpha;
             var symmetry=5;
+            var alpha;
             var beta1;
             var beta2;
             var x1;
@@ -184,8 +178,8 @@ The JavaScript output:
                         if(isNaN(symmetry) || symmetry<2 || symmetry>100){
                             symmetry=5;
                         }
-                        alpha=Math.PI/symmetry;
                         surface.clearRect(0,0, canvas.width, canvas.height);
+                        alpha=Math.PI/symmetry;
                         beta1=-Math.PI/2;
                         cf=0;
                         x0=ox+radius*Math.cos(beta1);

@@ -39,7 +39,7 @@ PAGE: t2
   --> [./t2]
 ```
         
-In a typical case though, the output module's default is sufficient and we rarely need to specify the type attribute.
+Typically the output module's default is sufficient and we rarely need to specify the type attribute.
 
 Next we can specify the output directory. The default is ".", the current working directory.
 
@@ -58,7 +58,7 @@ PAGE: t
   --> [./out/t.txt]
 ```
 
-But sometime, we may want to output directly to an existing source tree. For example, when we developing web sites, we may want to directly output to the configured site folder.
+Sometime, we may want to output directly to an existing source tree. For example, when we developing web sites, we may want to directly output to the configured site folder.
 
 We also can specify the output module using page attributes.
 ```

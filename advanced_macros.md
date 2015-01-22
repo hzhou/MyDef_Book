@@ -1,4 +1,4 @@
-# More about macros
+# More on setting macros
 
 Setting macros
 --------------

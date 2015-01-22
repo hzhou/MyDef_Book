@@ -1,68 +1,15 @@
-# General Structure of MyDef
+# Semantic structure
 
-To MyDef, all output files are simply text files with underlying structures -- from lower level syntactical structures to higher level semantic structures. Unfortunately, the low level structures do not always align with high level structures. When we encounter conflicts, we are forced to maintain the low level structures that are demanded by the language syntax, or it will not run. However, our comprehension works at semantic level from top to down. We wish to write in a way that preserves the higher level structures but somehow still can feed into the lower level language engine. MyDef is created for such purpose.
+A program is often structured either according to its execution or data storage. For example, a typical program may be grouped by intialization, computation, saving data and cleaning up. That is execution grouping. Or, the program code could be grouped by its data structure, where all code that related the data is collected together. However, there is a problem. The problem is these type structure is defined to be context free. Some routine is either a initialization routine or not, the choice will not change. Similarly, some functions are either connected to this data structure or not, the answer will not shift. Some of these answer can be ambiguous, but they do not change, they remain ambigous. That is what I mean by context free. Context free is a model for computers, which do not complain the amount of items being told to hold, as long as it does not change. 
 
-Let's look at an example:
+Our mind always works in some context. It is out of necessity. Our working memory can only hold five plus or minus two items. We can think about top level execution structure, which is initialization, computation, and saving and cleaning up, but in a context of overall structure. Under this context, we are not considering initialization of A, B, or C, we are not considering whether A need to be initialized and why B need to be initialized and we are not worrying about the orders. These details does not even exist when we are in a overall structure context.  Then at approprate opportunity, our context will shift to data structure A or particular feature B, and we will think again on what is initialization and what is computation. This time, we are thinking about whether or not we need initialization and its relationship to the later stage. Then in yet another opportunity, the context will be the relationship between A and B, and we will think about the order between A's initialization and B's initialization. That is a semantic structure.
 
-    AFunction(){
-        local variables a, b, c, ...
-        initialization1
-        initialization2
-        ...
-        initialzationM
-        process1
-        process2
-        ...
-        processN
-        finalization1
-        finalization2
-        ...
-        finalizationM
-        return
-    }
+If you ever browse into the source code of a random open source project, or involved into a project reviewing some code of history, or even being forced to read you own ancient code because of sum bugs that you need fixing, you may remember having a hard time. You want to pick out an order, a big picture, but anywhere you study, you hit by distractions. Dozens of variables being declared which you had no clue but somehow each give you tingling urge to abadon your goal of big picture and pursue that rabit down. In fact, hardly any time you will have a confident feeling that *this is* the big picture. You would always have a feeling that you may be missing something.
 
-It is a sequential semantic model with initialization, process, and finalization. However, imagine there are nested complex switches involved in each of above statement and there are so many statements that the whole function takes hundreds of lines. This is the case when low level structures of statements and switches obscures the high level structure of initialization, process, finalization. 
+Once upon a time during the creation of a code project, there is a time the code is laid out semantically in a simple context. Then the programmer added stuff of different context, mixed them together according the context-free model the underlying machine liked. Quickly, the working semantic structure is buried and lost. However, poeple who has been working on the project can somehow keep it going, to a certain extent. They cannot really see their semantic context in the code any more, but they remembers them, so they can slowly proceed, constantly re-constructs their semantic structure, with difficulty. People would often choose to restart their own code than fixing someone else's code.
 
-Should we wrap the codes into three functions such as:
-    
-    AFunction(){
-        A_Init();
-        A_Proc();
-        A_Exit();
-        return
-    }    
-    
-As soon as we attempt this, we realize the problem: what about those many variables all three functions would access and change? Should we move them into global space or pass them as paremeters? Either approach adds an extra layer of complexity.
+Can we write our program in the same way our mind works? Can we have a programming language that is What You See Is What You Think (WYSIWYT)?
 
-In addition, often the initializations and finalizations are paired. Files initially open need be closed. Memory initially allocated need be deallocated. Values initially pushed onto stack need be poped off and restored. These paired structures are initially obscured, but now with three functions, they are simply broken apart.
+It should be possible, right? We'll simply have group of text that is well connected within a narrow context with the context well commented or self-evident. As long as we do not mix the contexts up, ever. And the computer will piece all these scattered parts together and weave into a single program that a machine will run.
 
-Now let's look at the solution MyDef offers. First, MyDef allows grouping code into subcodes, which do not bring side effects to the lower level structures. Neither variable scopes nor parameter parsing need be changed. Next, MyDef provides facility to break the subcodes apart into sematic related groups, and shuffle them back at compile time.
-
-With MyDef, we can write:
-
-    $function AFunction
-        $call @init
-        $call @process
-        $call @exit
-        
-    #-- init/exit pair a --
-    subcode:: init
-        a_declare
-        a_init
-    subcode:: exit
-        a_exit
-    
-    #-- init/exit pair b --    
-    subcode:: init
-        b_declare
-        b_init
-    subcode:: exit
-        b_exit
-
-    ...
-    
-    subcode: process
-        ...
-
-Of course, I am not insisting everyone to agree with me on how to refactor a given code. Semantic structures often varies from person to person and organization to organization, and what is best can even change within a same programmer or organization as their experiences and needs change over time. What I am trying to convince you is that often you would need some extra flexibility to bend the restrictions required by your language of choice and MyDef may assist your quest.
-
+That is what MyDef trying to achieve.

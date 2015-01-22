@@ -6,4 +6,6 @@
    * Autoload
    * Preprocessing
    * Scopes
-   * More about macros
+   * More on setting macros
+   * More on macro expansion
+
