@@ -9,6 +9,7 @@
        * [HTML](gallery_html.md)
        * [JavaScript](gallery_javascript.md)
 * [Installing MyDef](Installing.md)
+   * [Text Editor](editor.md)
 * [Basic Features](Basic.md)
    * [Output modules](general_module.md)
    * [Page attributes](general_page_attr.md)
