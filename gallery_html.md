@@ -87,6 +87,8 @@ And here is the comipiled HTML page:
     </body>                                                                           
 </html>                                         
 ```
+
 If we open in a browser, we have:
+
 ![example page](html.png)
 
