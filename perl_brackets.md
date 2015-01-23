@@ -11,7 +11,8 @@ Experienced programmer already conventionally use indentations, in which case, t
 
 MyDef has following conventions:
 
-* If - elif - else
+If - elif - else
+----------------
 
 ```
 $if cond
@@ -107,7 +108,8 @@ It is a switch, putting them together doesn't make the logic simpler. If we want
 
 But that is just me. Everyone is allowed to have their own preferences or even idiosyncrasies. Whichever it is, you can use MyDef to help realize it.
 
-* While loop
+While loop
+----------
 
 ```
 $while cond
@@ -134,7 +136,8 @@ $while cont_cond
 ```
 Because the way my mind works changes upon comprehension vs. composing. Our context changes, and MyDef makes reflecting that change easy.
 
-* Foreach
+Foreach
+-------
 ```
 $foreach $item in @array
     process_item
@@ -153,7 +156,8 @@ $foreach $item in 2,3,5,7
 ```
 Again, MyDef do not try to interpret the specific language syntax. It simply trusts that we know what we are doing.
 
-* For
+For
+----
 It is probably me again, but I find the general for loop syntax too obscure for comprehension.
 ```
 for(init;check;step){...}
