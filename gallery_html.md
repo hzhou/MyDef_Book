@@ -1,5 +1,8 @@
 # HTML
-HTML is not exactly a programming language, and it is easy to grasp. But don't we all hate the cumbersomeness of those tags! Naturally, I would like to edit my HTML page something as: 
+HTML is not exactly a programming language, and it is easy to grasp. But don't we all hate the cumbersomeness of those tags! Easily fixable in MyDef.
+
+![example page](html.png)
+
 ```
 page: example, basic_frame
     title: HTML Example Page
@@ -88,7 +91,4 @@ And here is the comipiled HTML page:
 </html>                                         
 ```
 
-If we open in a browser, we have:
-
-![example page](html.png)
 

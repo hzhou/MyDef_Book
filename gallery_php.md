@@ -1,6 +1,9 @@
 # PHP
 
 For PHP, we show an example of simple login page.
+
+![login page](login.png)
+
 ```
 include: php_sql.def
 
