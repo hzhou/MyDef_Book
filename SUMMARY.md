@@ -8,6 +8,7 @@
        * [Perl](gallery_perl.md)
        * [HTML](gallery_html.md)
        * [JavaScript](gallery_javascript.md)
+       * [PHP](gallery_php.md)
 * [Installing MyDef](Installing.md)
    * [Text Editor](editor.md)
 * [Basic Features](Basic.md)
