@@ -1,7 +1,8 @@
 Other
 -----
 
-* $global
+$global
+-------
 
 Here is another coflicting interests. On one hand, we would like to declare global variables where we use them, which is most convinient when writing the code and convienient when trying to understand the code. But at another context, we want to group all global variables together, so we can spot any conflicts or extras that we should resolve or spare. 
 
@@ -28,7 +29,8 @@ for(my $i=0; $i <10; $i++){
 
 It allows you to put multiple variables declaration on the same line, which is a bonus.
 
-* $my
+$my
+----
 
 This is exactly the same as "my", it is there as a symmetry to $global.
 
@@ -46,7 +48,8 @@ my $c;
 
 ```
 
-* Subroutine
+$sub
+------
 
 $sub is also a way to avoid brackets, as well as let you conviniently specify parameters. 
 
@@ -98,7 +101,8 @@ page: t
 
 Autoload automatically put the content at the top of the output file, which is convinient to automatically pull those sub definitions in.
 
-* Package
+Package
+--------
 
 If you are writing a *Perl* library, you would want a ".pm" extension, which you can use the page attribute "type":
 
