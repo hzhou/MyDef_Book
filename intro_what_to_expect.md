@@ -4,9 +4,9 @@ MyDef is not a programming language.
 
 A programming language is a rather low level construct, mainly catering toward machines. As such, its structures are rather inflexible. It often demands to be context free, or always have the context well specified.
 
-On the other hand, our mind works on a semantic level, whose structures are quite fluid. We can think about a wheel, and we can think about a material, both quite independently. To our mind, we seperate them when we study them seperately, but we can also mix them when we need put them together. A semantic meaning is almost always within a context, and often the context is complicated but will be taken for granted without being specified.
+On the other hand, our mind works on a semantic level, whose structures are quite fluid. We can think about a wheel, and we can think about a material, both quite independently. To our mind, we separate them when we study them separately, but we can also mix them when we need put them together. A semantic meaning is almost always within a context, and often the context is complicated but will be taken for granted without being specified.
 
-MyDef is a meta layer that tries to cater toward how our mind works. MyDef does not intrisically respect the syntax of underlying programming language. Its fundamental model simply treats the source code as plain text. Therefore, MyDef can better focus on realizing our semantic structrures.
+MyDef is a meta layer that tries to cater toward how our mind works. MyDef does not intrinsically respect the syntax of underlying programming language. Its fundamental model simply treats the source code as plain text. Therefore, MyDef can better focus on realizing our semantic structures.
 
 But don't get it wrong, it is not one or the other. Our mind can easily shift focus back and forth between higher level semantic structure and lower level language constructs. We can program directly in assembly language as well as Basic, and Java. One is easier than the other depend on the degree that our mind need to bend. However, none of the programming language can reach a level what I would call "What you see is what you think" (WYSIWYT). MyDef aims at WYSIWYT.
 
@@ -14,7 +14,7 @@ An analogy can be drawn with our natural language. The language itself can actua
 
 Take a moment think about how we do our daily communication. We simply speak what we think, which are always confined in a very narrow context. We do not specify or clarify these context to our communication parter. But our partner would not be stomped by this lack of context. He will simply assume a context, based on his own context as well as many conventions, and guess what we mean, and then he would respond. Stripping away the context, we speak in a ambiguous way, but within convention, we guess correctly most of the time and the communication proceed efficiently. Do we always guess correct? Not always, but we simply notice from the response -- a very short feedback loop -- and make necessary adjustment and proceed. 
 
-MyDef wants to be that communication parter, so you can write programs as you think, and MyDef will follow the convention and make guesses. MyDef will strive to guess it correctly for most of the time. MyDef will misinterpret you sometime, but the underlying language compiler, which is designed in a context-free mode that always demand precision, will give you feedbacks (if integrated with editors, can be quick and automatic), and you'll simply make adjustments and proceed like nothing happened. 
+MyDef wants to be that communication parter, so you can write programs as you think, and MyDef will follow the convention and make guesses. MyDef will strive to guess it correctly for most of the time. MyDef will misinterpret you sometime, but the underlying language compiler, which is designed in a context free mode that always demand precision, will give you feedbacks (if integrated with editors, can be quick and automatic), and you'll simply make adjustments and proceed like nothing happened. 
 
 We believe this is achievable and we hope you'll like it.
 
