@@ -4,7 +4,7 @@ This example is slightly longer. I would like to do something interesting, as we
 
 ![counterpage](js_line.png)
 
-[Suggestion: simply focus on the page part and try to guess what it does, reference the screen shot at the end see if it helps. Then move on to specific subcodes one at a time.]
+[Suggestion: simply focus on the page part and try to guess what it does; reference the screen shot see if it helps. Then move on to specific subcodes one at a time.]
 
 [It's OK to simply skip these examples. You can always come back after you finish a few chapters later.]
 
