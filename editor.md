@@ -1,12 +1,12 @@
 # Text Editor
 
-In the course of showing people the power of MyDef, I have been suprised by how many people including experienced programers who do not know an efficient way of editing text files. MyDef is a cruesade toward claiming control and efficiency from catering toward machines.Watching some of my friends painstakingly go to notepad or wordpad editing the def file, manually maintaining the indentation of each line by pressing spaces, I can sympathize how they would find it difficult to appreciate MyDef. They merely want to get their jobs done, and MyDef just has become a new obstacle before finishing their jobs! 
+In the course of showing people the power of MyDef, I have been surprised by how many people including experienced programmers who do not know an efficient way of editing text files. MyDef is a crusade toward claiming control and efficiency from catering toward machines. Watching some of my friends painstakingly go to notepad or wordpad editing the def file, manually maintaining the indentation of each line by pressing spaces, I can sympathize how they would find it difficult to appreciate MyDef. They merely want to get their jobs done, and MyDef just has become a new obstacle before finishing their jobs! 
 
 MyDef is a power tool to help you get your job done much quicker, but you got to supply the electricity! Before we embark on learning how to use MyDef, I find it necessary to talk about text editors.
 
 If you are a vim or emacs user, then you are already masters of text editing, go ahead skip this section. 
 
-Actually I am going to talk a little bit about vim. Unlike other editors such as notepad, word, or Microsoft visual studio, vim is an editor that has a learning curve. The learning curve is not so steep that only people with how IQ can master, but a learning curve not unsimilar to riding a bike or driving a car. To get somewhere, you either ride a bus or drive your own car and initially drive your own car will be more difficult and more accident prone than riding a bus. But as soon as you pass a threshold, you'll see how the benefits overcome the effort. Vim is like that, and MyDef is like that.
+Actually I am going to talk a little bit about vim. Unlike other editors such as notepad, word, or Microsoft visual studio, vim is an editor that has a learning curve. The learning curve is not so steep that only people with how IQ can master, but a learning curve similar to riding a bike or driving a car. To get somewhere, you either ride a bus or drive your own car and initially drive your own car will be more difficult and more accident prone than riding a bus. But as soon as you pass a threshold, you'll see how the benefits overcome the effort. Vim is like that, and MyDef is like that.
 
 But I am not going to insist on Vim. It is really a personal preference. I'll just emphasize a few basic features a sufficient editor need have for you to benefit from MyDef.
 
