@@ -1,6 +1,6 @@
 # PHP
 
-For PHP, we show an example of simple login page.
+For PHP, let's look at an example of a simple login page.
 
 ![login page](login.png)
 
