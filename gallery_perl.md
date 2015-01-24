@@ -37,7 +37,5 @@ page: t
             $print "$1: $2\n"
 ```
 
-It is not much, but consider these are one-off quick scripts that one writes in a jiffy, the shaving of semicolons and brackets in MyDef is easy to get used to.
-            
-            
+No need to write the '#!' line or remember to use strict; no need to remember the semicolons; no need to balance the brackets or remember to close the file. It is not much, but consider these are one-off quick scripts that one wants to write in a jiffy, MyDef can save you a lot of time.
             
