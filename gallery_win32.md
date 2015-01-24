@@ -15,12 +15,9 @@ page: test, basic_frame
 
 # -------------------------------------------------
 subcode: main_on_WM_PAINT
-    $local PAINTSTRUCT ps
-    $local HDC hdc
-    hdc=BeginPaint(hwnd, &ps)
-    $call quick_font, "Times New Roman", 72
-    TextOut(hdc, 10, 10, "Hello World!", 12)
-    EndPaint(hwnd, &ps)
+    &call on_paint
+        $call quick_font, "Times New Roman", 72
+        TextOut(hdc, 10, 10, "Hello World!", 12)
     return 0
 
 ```
