@@ -1,7 +1,7 @@
 Installing MyDef
 ================
 
-MyDef can be installed on Linux, OSX, and Windows. Because MyDef is actually pure Perl package, it can run in any platform where Perl is installed. However, running MyDef on a non-unix environment is not well tested. So for this book, we'll assume a unix like system. On Windows platform, this means cygwin (https://www.cygwin.com/).
+MyDef can be installed on Linux, OSX, and Windows. Because MyDef is actually pure Perl package, it can run in any platform where Perl is installed. However, running MyDef on a non-UNIX environment is not well tested. So for this book, we'll assume a UNIX like system. On Windows platform, this means cygwin (https://www.cygwin.com/).
 
 First, obtain the source from github repository:
 
