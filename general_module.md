@@ -43,7 +43,7 @@ int main(){
 ```
 MyDef completed the function call for printf, and added the semicolons that we've been missing. 
 
-We can tell MyDef do assum no knowledge of underlying language. To do that, we can use the general module:
+We can tell MyDef to assume no knowledge of underlying language. To do that, we use the general module:
 
 ```
 $ mydef_page -mgeneral helloworld.def
