@@ -48,58 +48,52 @@ my $c;
 
 ```
 
-$sub
+Subroutine
 ------
 
-$sub is also a way to avoid brackets, as well as let you conviniently specify parameters. 
+You can directly write perl sub routines just like you write any other perl statements. If you would like to get rid of the brackets, you can you $sub:
 
 ```
 $sub A($a, $b)
     BLOCK
 ```
-It will be translated into:
+It compiles into:
 ```
 sub A{
     my ($a, $b)=@_;
     block;
 }
 ```
+In the spirit of flexibility, Perl subroutines do not really use formal parameters. However, semantically parameters are always part of a function structure. MyDef's $sub provides a way for you to specify the formal prameters.
 
-Here is a typical pattern:
+However, if you wouldn't mind where the sub definition occurs in the perl source code, you can use a special kind of subcode -- fncode:
 ```
 page: t
-    $call @support_subs
+    $global $a=10
 
-    A()
-    B()
+    test($a)
 
-subcode:: support_subs
-    $sub A
-        block
+fncode: test($a)
+    $global $b=1
 
-subcode:: support_subs
-    $sub B
-        block
+    print " $a + $b = ", $a+$b, "\n"
+```
+It compiles into:
+```
+#!/usr/bin/perl
+use strict;
+our $a=10;
+our $b=1;
+sub test {
+    my ($a) = @_;
+    print " $a + $b = ", $a+$b, "\n";
+}
+
+test($a);
 ```
 
-The pattern avoids find name for a subcode that defines a "sub" and then have to "$call" it to actually include in the output. 
+All the fncode will be collected and turned into Perl subs at the beginning of output code, after the global variables.
 
-If we are developing MyDef library, consider this pattern:
-
-```
-#---- file a.def ---
-subcode: _autoload
-    $sub A
-        block
-
-#---- file t.def ---
-include: a.def
-
-page: t
-    A()
-```
-
-Autoload automatically put the content at the top of the output file, which is convinient to automatically pull those sub definitions in.
 
 Package
 --------
