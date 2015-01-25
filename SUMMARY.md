@@ -45,6 +45,7 @@
        * [Print](c_print.md)
        * [Semicolons](c_semicolon.md)
        * [Curly brackets](c_brackets.md)
+       * [Preprocessor](c_preprocessor.md)
    * [C++](module_c++.md)
    * [Perl XS](module_xs.md)
    * [Win32](module_win32.md)
