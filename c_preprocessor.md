@@ -7,7 +7,7 @@ The rule is: if a line starts with '#', which may be preceded with spaces, and i
 
 Even when plain C preprocessor works, it will look like MyDef comments, thus confusing. So MyDef have work arounds for most of the C preprocessor needs. 
 
-* #include
+* "#include"
   We can use "$include" to include header files. MyDef will collect all "$include" lines together, and translate into "#include" preprocessor lines at the begining of the output file. The order of included files will not be observed. Rather, they will be ordered alphabetically including the leading angle bracket or quotation marks.
 
 ```
@@ -34,9 +34,9 @@ It compiles into:
 #include <bar>
 ```
 
-As we see, direct '#' preprocessor line are passed without change, while "$include" lines are collected, translated, and re-ordered at the top. The translation rules are: if the name include leading quotation mark or angle bracket, they are being kept as is; or, if it has an file extension, it will be put under quotation marks; otherwise, ".h" will be appended and put into angle brackets. 
+  As we see, direct '#' preprocessor line are passed without change, while "$include" lines are collected, translated, and re-ordered at the top. The translation rules are: if the name include leading quotation mark or angle bracket, they are being kept as is; or, if it has an file extension, it will be put under quotation marks; otherwise, ".h" will be appended and put into angle brackets. 
 
-In addition, you will find MyDef will recognize common function calls from stdlib.h, string.h, and math.h, and auto matically include them for you if you forget, a handy feature for writing quick programs.
+  In addition, you will find MyDef will recognize common function calls from stdlib.h, string.h, and math.h, and auto matically include them for you if you forget, a handy feature for writing quick programs.
 
 
   
