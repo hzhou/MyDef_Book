@@ -22,7 +22,7 @@ $elif cond_2
 $else
     block
 ```
-will be compiled into:
+It compiles into:
 
 ```
 if(cond){      
@@ -49,7 +49,7 @@ $if cond
 $else
     block
 ```
-will translate into:
+It compiles into:
 ```
 if(cond){
 }
@@ -115,7 +115,7 @@ While loop
 $while cond
     block
 ```
-will be translated into:
+It compiles into:
 ```
 while(cond){
     block;
@@ -142,7 +142,7 @@ Foreach
 $foreach $item in @array
     process_item
 ```
-will be translated into
+It compiles into:
 ```
 foreach my $item (@array){
     process_item;
