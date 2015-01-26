@@ -5,7 +5,7 @@ Donald Knuth once promoted a new approach to programming called *literate progra
 
 There are a few advocates for literate programming, but it never really catch on and I don't think it ever will. Because the practice of literate programming is essentially writing two versions of a program, the code, and the documentation, with the documentation much more verbose than the necessary code. People naturally will seek the simpler path.
 
-However, the problem of communication in programming is not a language issue. Experienced C programmer do think in C, and experienced JavaScript programmer do think in JavaScript -- at lease in some sort of pseudo code. Doing literate programming is like being forced to translate into Chinese while thinking and writing in English, certainly can be done if dedicated but never pleasant. The current problem in programing is we are being forced to write code in a way inconsistent to what is happening in our mind. 
+However, the problem of communication in programming is not a language issue. Experienced C programmer do think in C, and experienced JavaScript programmer do think in JavaScript -- at lease in some sort of pseudo code. Doing literate programming is like being forced to translate into Chinese while thinking and writing in English, certainly can be done if dedicated but never pleasant. The current problem in programming is we are being forced to write code in a way inconsistent to what is happening in our mind. 
 
 For example, let's try look at a typical code. This is start of main.c from the vim project:
 ```
