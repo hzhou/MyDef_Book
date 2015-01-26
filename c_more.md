@@ -52,6 +52,7 @@ subcode: test_matrix_mult
 ```
 
 * Hash
+
 ```
 include: c/hash.def
 
