@@ -5,6 +5,7 @@ There are more features MyDef can offer. However, they are more specialized and 
 The following code are directly from tests/ folder in MyDef repository. 
 
 * Regular expression
+
 ```
 include: c/regex.def
 
@@ -24,6 +25,7 @@ page: test, basic_frame
 ```
 
 * Matrix
+
 ```
 include: c/matrix.def
 macros:
@@ -75,6 +77,7 @@ subcode: test_hash
 ```
 
 * Dynameic array
+
 ```
 include: c/darray.def
 
