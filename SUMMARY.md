@@ -48,6 +48,7 @@
        * [Preprocessor](c_preprocessor.md)
        * [Function](c_function.md)
        * [Structure](c_struct.md)
+       * [More](c_more.md)
    * [C++](module_c++.md)
    * [Perl XS](module_xs.md)
    * [Win32](module_win32.md)
