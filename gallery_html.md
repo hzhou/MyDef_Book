@@ -33,62 +33,62 @@ PAGE: example
   --> [./t.html]
 ```
 
-And here is the comipiled HTML page:
+And result is the following HTML page:
 
 ```
-<!doctype html>                                                                       
-<html>                                                                                
-    <head>                                                                            
-        <meta charset="utf-8">                                                        
-        <title>HTML Example Page</title>                                              
-        <style>                                                                       
-            div.form  {padding: 10px; width: 300px; border: 2px solid darkgray}       
-            div.form_line  {margin-top: 10px}                                         
-        </style>                                                                      
-    </head>                                                                           
-    <body>                                                                            
-        <h1>                                                                          
-            My First Heading                                                          
-        </h1>                                                                         
-        <p>                                                                           
-            My first paragraph                                                        
-        </p>                                                                          
-        <div class="form">                                                            
-            <form id="form1" action="example_form.php" method="POST">                 
-                <input type="hidden" name="secret" value="1234">                      
-                <table>                                                               
-                    <tr>                                                              
-                        <td class="label">                                            
-                            <div class="formlabel">                                   
-                                username:                                             
-                            </div>                                                    
-                        </td>                                                         
-                        <td class="input">                                            
-                            <input type="text" class="textinput" name="username">     
-                        </td>                                                         
-                    </tr>                                                             
-                    <tr>                                                              
-                        <td class="label">                                            
-                            <div class="formlabel">                                   
-                                password:                                             
-                            </div>                                                    
-                        </td>                                                         
-                        <td class="input">                                            
-                            <input type="password" class="textinput" name="password"> 
-                        </td>                                                         
-                    </tr>                                                             
-                </table>                                                              
-                <div class="form_line">                                               
-                    <input type="radio" name="vote" value="1"> Up Vote                
-                    <input type="radio" name="vote" value="0"> Down Vote              
-                </div>                                                                
-                <div class="form_line">                                               
-                    <input type="submit" value="Submit">                              
-                </div>                                                                
-            </form>                                                                   
-        </div>                                                                        
-    </body>                                                                           
-</html>                                         
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Example Page</title>
+        <style>
+            div.form  {padding: 10px; width: 300px; border: 2px solid darkgray}
+            div.form_line  {margin-top: 10px}
+        </style>
+    </head>
+    <body>
+        <h1>
+            My First Heading
+        </h1>
+        <p>
+            My first paragraph
+        </p>
+        <div class="form">
+            <form id="form1" action="example_form.php" method="POST">
+                <input type="hidden" name="secret" value="1234">
+                <table>
+                    <tr>
+                        <td class="label">
+                            <div class="formlabel">
+                                username:
+                            </div>
+                        </td>
+                        <td class="input">
+                            <input type="text" class="textinput" name="username">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            <div class="formlabel">
+                                password:
+                            </div>
+                        </td>
+                        <td class="input">
+                            <input type="password" class="textinput" name="password">
+                        </td>
+                    </tr>
+                </table>
+                <div class="form_line">
+                    <input type="radio" name="vote" value="1"> Up Vote
+                    <input type="radio" name="vote" value="0"> Down Vote
+                </div>
+                <div class="form_line">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
 ```
 
 
