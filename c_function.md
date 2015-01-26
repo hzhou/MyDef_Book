@@ -3,7 +3,7 @@
 
 ### fncode and $list
 
-Even though one can directly write C functions using natice C syntax, we would prefer using MyDef's special syntax. We need let MyDef be aware of the function structure and take control so it can help us manage the declarations and variable scopes. 
+Even though one can directly write C functions using notice C syntax, we would prefer using MyDef's special syntax. We need let MyDef be aware of the function structure and take control so it can help us manage the declarations and variable scopes. 
 
 We can define function using "fncode" -- similar to "subcode". However, in order to give more control, they are not automatically included in the output. Function has to be explicitly included using "$list" or "$fcall" commands. This is to facilitate def libraries that potentially has many function defined but programmer only want to include those being used. 
 
@@ -29,7 +29,7 @@ void test(){
 
 ```
 
-Function test is listed, but function test2 is omited. Also note the declaration for included functions are always included at the beging so that the order of function definitions will not matter (the orders are according to the order of $list commands).
+Function test is listed, but function test2 is omitted. Also note the declaration for included functions are always included at the beginning so that the order of function definitions will not matter (the orders are according to the order of $list commands).
 
 "$list" only includes the function, but will not run the function. Function are called with native C statements:
 ```
@@ -85,7 +85,7 @@ void test(){
 ```
 $fcall has to be either followed by function name (doesn't matter what the rest of the line is) or in the form of "var=functionName(...)".  
 
-I should mention that MyDef is able to automatically include all fncode as functions. We can enable that by adding a page atribute "autolist: 1":
+I should mention that MyDef is able to automatically include all fncode as functions. We can enable that by adding a page attribute "autolist: 1":
 ```
 fncode: test
     $print Hello world!
