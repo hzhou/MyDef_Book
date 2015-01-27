@@ -110,6 +110,7 @@ subcode: numcmp(na, nb)
 	BLOCK
 
 ```
+Anonymous functions are typically used as call back functions or part of API interface, which almost always carries a context. It always makes sense to code anonymous function in a library that can utilize the context thus make the calling routine clean and simple.
 
 Just to make sure, let's compile and run it:
 ```
