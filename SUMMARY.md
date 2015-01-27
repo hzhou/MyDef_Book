@@ -48,6 +48,7 @@
        * [Preprocessor](c_preprocessor.md)
        * [Function](c_function.md)
        * [Structure](c_struct.md)
+       * [Anonymous Function](c_lamda.md)
        * [More](c_more.md)
    * [Perl XS](module_xs.md)
    * [HTML-JavaScript-PHP](module_www.md)
