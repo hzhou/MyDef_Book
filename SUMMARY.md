@@ -4,6 +4,7 @@
 * [Overview](overview.md)
    * [What to expect](intro_what_to_expect.md)
    * [Quick Tour](intro_quick_tour.md)
+   * [Just Another Syntax?](intro_syntax.md)
    * [Gallery](intro_gallery.md)
        * [Perl](gallery_perl.md)
        * [HTML](gallery_html.md)
