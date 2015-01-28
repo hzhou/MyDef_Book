@@ -8,6 +8,8 @@ MyDef is not another language. It is an additional layer on top of your programm
 
 For example, you always need write curly braces and semicolons, do you ever think they are extra? MyDef allows you to omit them! And it is not an on/off switch. If you like them somewhere but not here, you can omit them here but write them somewhere. What ever you think is the best, intuitive, natural, MyDef lets you do that. 
 
-As another example, have you complained about boilerplate code? If you use API, those code are every where. But think about it, if they are boiler plate, there is only one information node, do you wish that you can simply call that boiler plate in one word -- consistent to one information node -- instead of duplicating that code again and again? MyDef enables you to do just that. 
+As another example, have you complained about boilerplate code? If you use API, those code are everywhere. But think about it, if they are boiler plate, there is only one information node, do you wish that you can simply call that boiler plate in one word (consistent to one information node) instead of duplicating that code again and again? MyDef enables you to do just that. 
 
 So instead of reading this book and think about what benefit MyDef will bring you, think about what bad you want to improve. MyDef's benefit is only as good as your vision.
+
+Next I am going to show you some of these visions, bur remember, you don't have to agree with them. If you have different vision, MyDef probably still can help you (to extreme visions that may mean that you need write MyDef extension for it).
