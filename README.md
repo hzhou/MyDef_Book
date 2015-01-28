@@ -1,67 +1,20 @@
 Introduction
 =======
 
-Donald Knuth once promoted a new approach to programming called *literate programming*. The idea is we write programs to machines, but human mind is not like machines and cannot easily comprehend the code. So literate programming advocates writing to communicate to human using ordinary human language. 
+Let's say you have been programming for a while, do you find yourself complaining about your programming language and wish some more intuitive way to write it? Did you ever wished your programming language will have more natural way of doing object oriented programming, functional programing, or simply imperative programming? Did you sometime you would like to refactor your code into some clearer structure but the cost of sorting out its effects on other part prohibits you to do it?
 
-There are a few advocates for literate programming, but it never really catch on and I don't think it ever will. Because the practice of literate programming is essentially writing two versions of a program, the code, and the documentation, with the documentation much more verbose than the necessary code. People naturally will seek the simpler path.
+I had all these problems.
 
-However, the problem of communication in programming is not a language issue. Experienced C programmer do think in C, and experienced JavaScript programmer do think in JavaScript -- at lease in some sort of pseudo code. Doing literate programming is like being forced to translate into Chinese while thinking and writing in English, certainly can be done if dedicated but never pleasant. The current problem in programming is we are being forced to write code in a way inconsistent to what is happening in our mind. 
+I hate semicolons. I can read my code without semicolons and understand it with no ambiguity, why I still have to remember to append them each time?
 
-For example, let's try look at a typical code. When we start to understand something, we first need see its overall picture, but that's not all typical in a typical code. I happen to have the vim source code and let's look at main.c:
-```
-#define EXTERN
-#include "vim.h"
+I hate curly braces. I was being forced to write opening brace, and from my wisdom, I have to immediately make new line and put down the closing brace, then I need go back into the braces to start writing, by which time my thought flow is often already interrupted. I always have trouble visually matching braces so I always manage indentations. but if I did that, why do I still being forced to use braces, or "endif", "endwhile", or "endfunction"? 
 
-#ifdef SPAWNO
-# include <spawno.h>		/* special MS-DOS swapping library */
-#endif
+I hate boilerplate code. If they are boilerplate, there is only one information node for me, why do I have to clutter my reading with so many lines and worst, spread over my entire code?
 
-...
+I complain, and then I think about doing something about it. I am not going to let it ruin my love for programming. That is why I am not addicted to MyDef.
 
+Often, when we complain, we look for new language. But that is misleading. There isn't perfect programming languages. There are two sides of programming. On one side, we want specific, accurate, context free. We want the machine do things consistently. On the other side, we want efficiency, flexibility, and we want the machine be able to *guess* what we mean. The goals of these two sides are in conflict by nature. The variety of programing language is basically a balance between these two desires. We want both, therefore, we will never find a perfect programming language.
 
-/* Struct for various parameters passed between main() and other functions. */
-typedef struct
-{
-    int		argc;
-    char	**argv;
+So the solution is to adopt two layers of programming context. In the lower layer, we want the language specific, accurate, and context free. Ideally, we want to be able to prove a program is such language is bug free. On the upper layer, we want convention, context, and intelligence. Between these two layers are a short feedback loops: we say something, either it went fine or we got signal, then we adjust how we say it and run the feedback again (automatically). That is actually how we do things in our natural langauge. And as in our natural language, we want to write code exactly as we think in our mind.
 
-    int		evim_mode;		/* started as "evim" */
-
-...
-
-```
-There is no way a mind can digest that. Let's jump to the main function:
-```
-main
-(argc, argv)
-{
-    char_u	*fname = NULL;		/* file name from command line */
-    mparm_T	params;			/* various parameters passed between
-    ...
-
-#ifdef __EMX__
-    _wildcard(&params.argc, &params.argv);
-#endif
-
-#ifdef FEAT_MBYTE
-    (void)mb_init();	/* init mb_bytelen_tab[] to ones */
-#endif
-#ifdef FEAT_EVAL
-    eval_init();	/* init global variables */
-#endif
-
-#ifdef __QNXNTO__
-    qnx_init();		/* PhAttach() for clipboard, (and gui) */
-#endif
-
-...
-
-[Each ... represents many many lines being omited.]
-```
-In fact, the whole main.c is 4155 lines long. How can any one's mind follow the way these code is written? Of course one needs to cross reference and jump back and forth and put in time, but I think you can see my point: the code is not written in a way consistent to how a typical mind would work. Almost all open source project end up with code like that, in my mind, not open at all. Experienced programmers would rather start their new project than comprehend an existing project, that can't be good.
-
-I believe when the first line of vim is being written down, it is in a much easier to follow state, and what we see here is years of add-ons. But this is not a good excuse. A good book is often being worked on many many revisions, but it never will become inconsistent upon reading (if the editor is good). The problem the way we program is obvious: the current programming language structure prevents us to write in a way consistent to our mind. 
-
-MyDef is aiming to change that. It is a semantic macro layer to enable us to write code consistent to how we think about the code in both the writing stage and reading stages. Ideally, the code written in MyDef should be intuitive and natural, ready to be comprehended by a human mind (given that he is fluent in the underlying programming language and model), with limited amounts of comments.
-
-
+MyDef is that uppder layer, and you can stop complaining about how the lower layer does not understand you and simply focus on its merit of accuracy while let the uppder layer solve these problems for you.
