@@ -13,6 +13,7 @@ MyDef:
 ```
 macros:
     size: 200
+    KEY_ENTER: 13
 
 page: js_example, js_frame
     title: JavaScript Example
@@ -24,16 +25,22 @@ page: js_example, js_frame
 
     subcode: js_onload
         $map load_element, symmetry_input
-        symmetry_input.value=5+""
+        symmetry_input.value="5"
         $call 2d_init, canvas
         &call listen, symmetry_input, keyup
-            $if event.which == 13
+            $if event.which == $(KEY_ENTER)
                 $call set_symmetry, parseFloat(symmetry_input.value)
                 $call draw_reset
 
         &call animate
             $call draw_step, dt/1000
 
+```
+There is another part of code lists the details, but let's pause and reflect on what we did. We have isolated a higher level contexts that one can simply try to comprehend what is going on. Of course you won't know exactly what "2d_init" do, and what "draw_reset" or "draw_step" do, but do you really need exact details before you comprehend at this context? Other than missing details, we see everything. Knowing we are not missing anything is a very important step in comprehension.
+
+Now we got the whole picture in the back of our mind, let's check out the gory details:
+
+```
 #---------------------------------------- 
 subcode: 2d_init(canvas)
     $call load_element, $(canvas)
