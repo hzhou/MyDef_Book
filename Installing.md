@@ -15,7 +15,8 @@ First, obtain the source from github repository:
 
 The author of MyDef recommend install into one's home directory. First add following line into one's .bashrc file:
 
-    PATH=/bin:/usr/bin:~/bin
+    # The following PATH often works, but you probably would want to customize it
+    PATH=~/bin:/bin:/usr/bin
     PERL5LIB=~/lib/perl5
     MYDEFLIB=~/lib/MyDef
     export PATH PERL5LIB MYDEFLIB
