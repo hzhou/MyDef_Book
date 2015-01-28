@@ -90,7 +90,9 @@ subcode: draw_step(delta_time_in_second)
 	surface.lineTo(x1+(x2-x1)*cf, y1+(y2-y1)*cf)
     surface.stroke();
 
-#---------------------------------------- 
+#----------------------------------------
+#-- Math will be difficult no matter what.
+#-- I isolate them here so we can put on math cap before engaging.
 macros:
     C: Math.cos($1)
     S: Math.sin($1)

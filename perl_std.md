@@ -8,7 +8,7 @@ Instead of listing the entire file here, you can open std_perl yourself, and rea
 ```
 subcode: open_r(name)
     $(if:name~")
-	$(set:name=$(name:strip))
+        $(set:name=$(name:strip))
     open In, "$(name)" or die "Can't open $(name).\n"
     $while <In>
         BLOCK
@@ -16,7 +16,7 @@ subcode: open_r(name)
 
 subcode: open_w(name)
     $(if:name~")
-	$(set:name=$(name:strip))
+        $(set:name=$(name:strip))
     open Out, ">$(name)" or die "Can't write $(name).\n"
     BLOCK
     close Out
