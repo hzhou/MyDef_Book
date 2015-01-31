@@ -11,6 +11,7 @@
        * [JavaScript](gallery_javascript.md)
        * [PHP](gallery_php.md)
        * [Win32](gallery_win32.md)
+   * [Easier Than You Think](intro_easy.md)
 * [Installing MyDef](Installing.md)
    * [Text Editor](editor.md)
 * [Basic Features](Basic.md)
