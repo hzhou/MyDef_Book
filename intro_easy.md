@@ -75,7 +75,7 @@ subcode: open_r(name)
     close In
 ```
 
-It is straight Perl! Now you learned the trick!. Now if you are smart, you also learned how to go on and make your own magick!
+It is straight Perl! And now you learned the trick!
 
 
 

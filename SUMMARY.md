@@ -54,5 +54,8 @@
        * [More](c_more.md)
    * [Perl XS](module_xs.md)
    * [HTML-JavaScript-PHP](module_www.md)
+       * [HTML](html.md)
+       * [JavaScript](js.md)
+       * [PHP](php.md)
 * [Extending MyDef](extending_mydef.md)
 
