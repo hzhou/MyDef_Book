@@ -63,7 +63,7 @@ subcode: test_hash
     $my hash H
     
     $(for:i in 1..500)
-	H{a$(i)}=$(i)
+        H{a$(i)}=$(i)
     H{34}=43
     H{"68"}=86
     H{hello}=12345
@@ -74,7 +74,7 @@ subcode: test_hash
     $print "  hello: %d", H{hello}
     
     $if H{a18}
-	$print "Got a18"
+        $print "Got a18"
 ```
 
 * Dynameic array
@@ -90,27 +90,27 @@ page: test, basic_frame
 
 subcode: test_foreach_static
     $block
-	$print "\ntest foreach pn_test ..."
-	$my pn_test[10]
-	$foreach pn_test
-	    $(t)=$(i)*2+1
-	    $print "    %d: %d", $(i), $(t)
+        $print "\ntest foreach pn_test ..."
+        $my pn_test[10]
+        $foreach pn_test
+            $(t)=$(i)*2+1
+            $print "    %d: %d", $(i), $(t)
 
 subcode: test_foreach_dynamic
     $block
-	n=10
-	$local_allocate(n) pn_test
-	$foreach pn_test
-	    $(t)=$(i)*2
-	    $print "    %d: %d", $(i), $(t)
+        n=10
+        $local_allocate(n) pn_test
+        $foreach pn_test
+            $(t)=$(i)*2
+            $print "    %d: %d", $(i), $(t)
 
 #---------------------------------------- 
 subcode: test_darray
     $my darray P: int, char
     P.$resize 10
     $foreach P
-	$(t)=$(i), $(i)+'A'
-	$print "    %d: %c", $(i), $(t).2
+        $(t)=$(i), $(i)+'A'
+        $print "    %d: %c", $(i), $(t).2
     P.$resize 0
     P.$push 108, 108
     $print "last item: %d", P[-1].1
