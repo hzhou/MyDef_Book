@@ -10,8 +10,8 @@ To tell MyDef what is your underlying language, we specify the module type. For 
 page: helloworld
     #include <stdio.h>
     int main(){
-	printf "Hello world!\n"
-	return 0
+        printf "Hello world!\n"
+        return 0
     }
 ```
 

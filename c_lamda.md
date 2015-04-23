@@ -34,8 +34,8 @@ It compi into:
 #include <stdlib.h>
 
 struct record {
-	char * s_name;
-	int n_score;
+        char * s_name;
+        int n_score;
 };
 
 int qsort_cmp(const void * a, const void * b);
@@ -94,20 +94,20 @@ The qsort subcode (as well as numcmp subcode) are included in standard library s
 # ---- part of file std_c.def -----------------
 subcode: qsort(list, size, type)
     $function qsort_cmp(const void * a, const void * b)
-	$return_type int
-	$(set:a=(*($(type)*)a))
-	$(set:b=(*($(type)*)b))
-	BLOCK
+        $return_type int
+        $(set:a=(*($(type)*)a))
+        $(set:b=(*($(type)*)b))
+        BLOCK
     qsort($(list), $(size), sizeof($(type)), $(lamda))
 
 subcode: numcmp(na, nb)
     $(allow_recurse:10)
     $if $(na)<$(nb)
-	return -1
+        return -1
     $elif $(na)>$(nb)
-	return 1
+        return 1
     $else
-	BLOCK
+        BLOCK
 
 ```
 Anonymous functions are typically used as call back functions or part of API interface, which almost always carries a context. It always makes sense to code anonymous function in a library that can utilize the context thus make the calling routine clean and simple.

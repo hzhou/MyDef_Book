@@ -67,13 +67,13 @@ macros:
 
 page: t
     $(if:name)
-	Hello, $(name)
+        Hello, $(name)
     $(unset:name)
 
     $(if:name)
-	Still here!
+        Still here!
     $(else)
-	Oh, you are no longer here!
+        Oh, you are no longer here!
 ```
 Output:
 ```
@@ -93,7 +93,7 @@ subcode: A
 
 page: t
     $(for:i in 1..10)
-	$call A
+        $call A
 ```
 Output:
 ```

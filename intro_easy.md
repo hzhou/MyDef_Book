@@ -68,7 +68,7 @@ But you will wonder how this seemingly intuitive but unfamiliar code can be equi
 ```
 subcode: open_r(name)
     $(if:name~")
-	$(set:name=$(name:strip))
+        $(set:name=$(name:strip))
     open In, "$(name)" or die "Can't open $(name).\n"
     $while <In>
         BLOCK

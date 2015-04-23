@@ -63,7 +63,7 @@ subcode: set_symmetry(symmetry)
     $global symmetry=5
     symmetry=$(symmetry)
     $if isNaN(symmetry) || symmetry<2 || symmetry>100
-	symmetry=5
+        symmetry=5
 
 subcode: draw_reset
     surface.clearRect(0,0, canvas.width, canvas.height)
@@ -72,8 +72,8 @@ subcode: draw_reset
 subcode: draw_step(delta_time_in_second)
     $global n_lines=0
     $if n_lines>symmetry
-	surface.clearRect(0,0, canvas.width, canvas.height)
-	n_lines=0
+        surface.clearRect(0,0, canvas.width, canvas.height)
+        n_lines=0
 
     #-- draw $(speed) pixels per second, df is the one pixel fraction
     $(set:speed=$(size)/2)
@@ -82,12 +82,12 @@ subcode: draw_step(delta_time_in_second)
     surface.moveTo(x0+(x1-x0)*0.9, y0+(y1-y0)*0.9)
     surface.lineTo(x1, y1)
     $if cf>1.0
-	surface.lineTo(x2,y2)
-	beta1=beta2
-	$call math_step, 1
-	n_lines++
+        surface.lineTo(x2,y2)
+        beta1=beta2
+        $call math_step, 1
+        n_lines++
     $else
-	surface.lineTo(x1+(x2-x1)*cf, y1+(y2-y1)*cf)
+        surface.lineTo(x1+(x2-x1)*cf, y1+(y2-y1)*cf)
     surface.stroke();
 
 #----------------------------------------
@@ -103,7 +103,7 @@ subcode: math_step(mode)
     $global alpha, beta1, beta2, x1, y1, x2, y2
     $global cf, df
     $(if:mode=0)
-	alpha=$(Pi)/symmetry
+        alpha=$(Pi)/symmetry
         beta1=-$(Pi)/2
         cf=0
         x0=ox+radius*$(C:beta1)

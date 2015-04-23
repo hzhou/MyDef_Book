@@ -100,7 +100,7 @@ As a good neat programer, we want to seperate the library def files from page pr
     include: macros_library/A.def
 
     page: t2
-	$call A
+        $call A
 
 Or we could tell MyDef where to look for libraries. To do that, we need to edit the config file. The current config file only has two lines: 
 ```

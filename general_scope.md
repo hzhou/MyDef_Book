@@ -27,9 +27,9 @@ In addition to explicit subcode scope, preprocessing directive "$(for:...)" will
 ```
 subcode: A(name)
     $(if:name=Hui)
-	$(set:greeting=Hi)
+        $(set:greeting=Hi)
     $(else)
-	$(set:greeting=Hello)
+        $(set:greeting=Hello)
     $(greeting), $(name)!
 
 page: t
@@ -41,12 +41,12 @@ will output "Hi, Hui!". However,
 ```
 page: t
     $(for:i in 1-3)
-	$(set:name=Hui_$(i))
-	Set $(name).
+        $(set:name=Hui_$(i))
+        Set $(name).
     $(if:name)
-	Hi, $(name)!
+        Hi, $(name)!
     $(else)
-	No name here!
+        No name here!
 
 ```
 will compile to
@@ -67,8 +67,8 @@ subcode: A
 
 page: t                      
     &call A
-	in BLOCK: name=$(name)
-	$(set:name=page t)
+        in BLOCK: name=$(name)
+        $(set:name=page t)
 ```
 And if we compile, we get:
 ```

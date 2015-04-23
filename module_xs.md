@@ -6,7 +6,7 @@
 
 page: test_xs, basic_frame
     subcode: xs_main
-	$list test, test_array
+        $list test, test_array
 
 fncode: test(s_name)
     $global sv_global
@@ -16,7 +16,7 @@ fncode: test(s_name)
 
 fncode: test_array(av_list)
     $foreach tn in av_list
-	printf("  %4d ", tn)
+        printf("  %4d ", tn)
     printf("\n")
 
 ```

@@ -25,7 +25,7 @@ MyDef allows just like that! To achieve that magic, first we have to change from
 subcode: open_r(name)
     open In, "$(name)" or die "I can't open $(name)!\n";
     while(<In>){
-	BLOCK
+        BLOCK
     }
     close In;
 ```
@@ -37,31 +37,31 @@ It is easy to be carried away. One time I was programming a 3-dimension array, a
 ```
 subcode: loop_x
     for(i_x=0;i_x<n_x;i_x++){
-	BLOCK
+        BLOCK
     }
 
 subcode: loop_y
     for(i_y=0;i_y<n_x;i_y++){
-	BLOCK
+        BLOCK
     }
 
 subcode: loop_z
     for(i_z=0;i_z<n_x;i_z++){
-	BLOCK
+        BLOCK
     }
 
 subcode: loop_xyz
     i=0
     &call loop_z
-	&call loop_y
-	    &call loop_x
-		BLOCK
-		i++;
+        &call loop_y
+            &call loop_x
+                BLOCK
+                i++;
 
 page: t
     module: c
 
     &call loop_xyz
-	# manipulate array[i]
+        # manipulate array[i]
 ```
 I'll leave to you to judge whether that is too obssessive.

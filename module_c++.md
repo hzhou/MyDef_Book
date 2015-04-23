@@ -15,13 +15,13 @@ page: test, basic_frame
     $list permuteF
 
     fncode: permuteF(vn_num)
-	&call vvn_return
-	    n=vn_num.size()
-	    $if n>0
-		&call permute, n
-		    &call vvn_append, vvn_ret
-			$for i=0:n
-			    $(V).push_back(vn_num[$(perm)[i]])
+        &call vvn_return
+            n=vn_num.size()
+            $if n>0
+                &call permute, n
+                    &call vvn_append, vvn_ret
+                        $for i=0:n
+                            $(V).push_back(vn_num[$(perm)[i]])
 
 #---------------------------------------- 
 #- macros/vector.def
@@ -59,30 +59,30 @@ subcode: permute(n)
     $(set:perm=pn_counter)
     $local_allocate(n) $(perm)
     $for i=0:n
-	$(perm)[i]=i
+        $(perm)[i]=i
     $while 1
-	BLOCK
-	$call permute_inc
+        BLOCK
+        $call permute_inc
 
 subcode: permute_inc
     # $call debug_perm
     tn_max=-1
     $for i=n:0
-	$if tn_max<$(perm)[i]
-	    tn_max=$(perm)[i]
-	$else
-	    $for j=n:0
-		$if $(perm)[j]>$(perm)[i]
-		    $call swap, $(perm)[i], $(perm)[j]
-		    break
-	    j=i+1
-	    k=n-1
-	    $while j<k
-		$call swap, $(perm)[j], $(perm)[k]
-		j++
-		k--
-	    break
+        $if tn_max<$(perm)[i]
+            tn_max=$(perm)[i]
+        $else
+            $for j=n:0
+                $if $(perm)[j]>$(perm)[i]
+                    $call swap, $(perm)[i], $(perm)[j]
+                    break
+            j=i+1
+            k=n-1
+            $while j<k
+                $call swap, $(perm)[j], $(perm)[k]
+                j++
+                k--
+            break
     $if i<0
-	break
+        break
 
 ```

@@ -11,9 +11,9 @@ subcode: basic_frame
     $include stdlib
     $call @global
     $(if:hascode:n_main)
-	$list n_main
+        $list n_main
     $(if:hascode:main2)
-	$list main2
+        $list main2
 
 ```
 

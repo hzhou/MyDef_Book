@@ -24,10 +24,10 @@ It compiles into:
 #include <stdlib.h>
 
 struct mystruct {
-	int n_id;
-	char * s_firstname;
-	char * s_lastname;
-	char * interest;
+        int n_id;
+        char * s_firstname;
+        char * s_lastname;
+        char * interest;
 };
 
 int main(int argc, char** argv){

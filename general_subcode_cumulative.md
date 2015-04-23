@@ -81,27 +81,27 @@ subcode: basic_frame
 
 subcode:: content
     $p
-	std_www
+        std_www
 
 #---- my_frame.def ----
 subcode: basic_frame
     <!doctype html>         
     $html                   
         $body               
-	    $h1
-		My Page!
+            $h1
+                My Page!
             $call content  
 
 subcode:: content
     $p
-	my_frame
+        my_frame
 
 #---- special_frame.def ----
 include: my_frame.def
 
 subcode:: content
     $p
-	special_frame
+        special_frame
 
 #---- page.def ----
 include: special_frame
@@ -111,7 +111,7 @@ subcode: basic_frame
 
 subcode:: content
     $p
-	page specific
+        page specific
 
 page: t, basic_frame
 
