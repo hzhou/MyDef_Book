@@ -61,4 +61,5 @@
        * [std_win32.def](win32_std.md)
        * [win32/windows.def](win32_windows.md)
 * [Extending MyDef](extending_mydef.md)
+   * [perlcode](extend_perlcode.md)
 
