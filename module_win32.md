@@ -6,4 +6,21 @@ It is not a separate language, however, Win32 programming contains many windows 
 
 In fact, if you use output_c module and include "std_win32.def", for most part it is identical as using the output_win32 module.
 
-This chapter will serve as an example of how to create custom conventions for domain specific applications. We'll simply walk through the standard include files: `std_win32.def`, `win32/windows.def`, and `win32/gdi.def`
+This chapter will serve as an example of how to create custom conventions for domain specific applications. We'll simply walk through the standard include files: `std_win32.def`, `win32/windows.def`, and `win32/gdi.def`. Before we start, let's review our `hello world`:
+
+```
+page: test, basic_frame
+    $global hwnd_main
+    $call wc_background, COLOR_BACKGROUND
+    $call register_wndclass, "test", WndProc_main
+    $call create_window, hwnd_main, "test"
+    $call win_show, hwnd_main
+    $call win_loop
+
+# -------------------------------------------------
+subcode: main_on_WM_PAINT
+    &call on_paint
+        $call quick_font, "Times New Roman", 72
+        TextOut(hdc, 10, 10, "Hello World!", 12)
+    return 0
+```
