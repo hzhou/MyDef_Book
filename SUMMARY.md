@@ -57,5 +57,7 @@
        * [HTML](html.md)
        * [JavaScript](js.md)
        * [PHP](php.md)
+   * [Win32](module_win32.md)
+       * [std_win32.def](win32_std.md)
 * [Extending MyDef](extending_mydef.md)
 
