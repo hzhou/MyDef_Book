@@ -59,5 +59,6 @@
        * [PHP](php.md)
    * [Win32](module_win32.md)
        * [std_win32.def](win32_std.md)
+       * [win32/windows.def](win32_windows.md)
 * [Extending MyDef](extending_mydef.md)
 
