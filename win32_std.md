@@ -91,8 +91,8 @@ subcode: win_loop
     NEWLINE
     $local MSG msg
     $while GetMessage(&msg, NULL, 0, 0)>0
-	TranslateMessage(&msg)
-	DispatchMessage(&msg)
+        TranslateMessage(&msg)
+        DispatchMessage(&msg)
 
 ```
 If you are familiar with windows programming, then these are straight forward. 
